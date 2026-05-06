@@ -1,4 +1,8 @@
 package edu.kis.vh.nursery;
+/**
+ * Klasa DefaultCountingOutRhymer reprezentuje podstawowy mechanizm wyliczanki
+ */
+///
 
 public class defaultcountingoutrhymer {
 
@@ -9,6 +13,10 @@ public class defaultcountingoutrhymer {
 
     public int total = EMPTY;
 
+    /**
+     * Dodaje nową wartość do wyliczanki, o ile nie osiągnięto maksymalnej pojemności.
+     * * @param in Wartość liczbowa do dodania.
+     */
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
